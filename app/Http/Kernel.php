@@ -60,12 +60,21 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+<<<<<<< HEAD
+=======
+        'isAdmin' => \App\Http\Middleware\AdminMiddleware::class,
+        'clearance' => \App\Http\Middleware\ClearanceMiddleware::class,
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
     ];
 
     /**
      * The priority-sorted list of middleware.
      *
+<<<<<<< HEAD
      * This forces the listed middleware to always be in the given order.
+=======
+     * This forces non-global middleware to always be in the given order.
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
      *
      * @var array
      */

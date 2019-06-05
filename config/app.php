@@ -54,6 +54,11 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+<<<<<<< HEAD
+=======
+    'asset_url' => env('ASSET_URL', null),
+
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -159,6 +164,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+<<<<<<< HEAD
+=======
+        Collective\Html\HtmlServiceProvider::class,
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
 
         /*
          * Package Service Providers...
@@ -189,6 +198,10 @@ return [
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
+<<<<<<< HEAD
+=======
+        'Arr' => Illuminate\Support\Arr::class,
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
         'Blade' => Illuminate\Support\Facades\Blade::class,
@@ -218,9 +231,18 @@ return [
         'Schema' => Illuminate\Support\Facades\Schema::class,
         'Session' => Illuminate\Support\Facades\Session::class,
         'Storage' => Illuminate\Support\Facades\Storage::class,
+<<<<<<< HEAD
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+=======
+        'Str' => Illuminate\Support\Str::class,
+        'URL' => Illuminate\Support\Facades\URL::class,
+        'Validator' => Illuminate\Support\Facades\Validator::class,
+        'View' => Illuminate\Support\Facades\View::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
 
     ],
 

@@ -32,6 +32,10 @@ return [
     'boolean' => 'The :attribute field must be true or false.',
     'confirmed' => 'The :attribute confirmation does not match.',
     'date' => 'The :attribute is not a valid date.',
+<<<<<<< HEAD
+=======
+    'date_equals' => 'The :attribute must be a date equal to :date.',
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
     'date_format' => 'The :attribute does not match the format :format.',
     'different' => 'The :attribute and :other must be different.',
     'digits' => 'The :attribute must be :digits digits.',
@@ -39,6 +43,10 @@ return [
     'dimensions' => 'The :attribute has invalid image dimensions.',
     'distinct' => 'The :attribute field has a duplicate value.',
     'email' => 'The :attribute must be a valid email address.',
+<<<<<<< HEAD
+=======
+    'ends_with' => 'The :attribute must end with one of the following: :values',
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
     'exists' => 'The selected :attribute is invalid.',
     'file' => 'The :attribute must be a file.',
     'filled' => 'The :attribute field must have a value.',
@@ -107,6 +115,10 @@ return [
         'string' => 'The :attribute must be :size characters.',
         'array' => 'The :attribute must contain :size items.',
     ],
+<<<<<<< HEAD
+=======
+    'starts_with' => 'The :attribute must start with one of the following: :values',
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
     'string' => 'The :attribute must be a string.',
     'timezone' => 'The :attribute must be a valid zone.',
     'unique' => 'The :attribute has already been taken.',

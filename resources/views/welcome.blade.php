@@ -4,10 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<<<<<<< HEAD
         <title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+=======
+        <title>Smartec</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
 
         <!-- Styles -->
         <style>
@@ -72,15 +79,20 @@
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
+<<<<<<< HEAD
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
                         @endif
+=======
+                        
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
                     @endauth
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
+<<<<<<< HEAD
                     Laravel on Cloudways
                 </div>
 
@@ -91,6 +103,12 @@
                     <a href="https://www.cloudways.com/en/laravel-faqs.php">FAQ</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+=======
+                    SMARTEC
+                </div>
+
+                
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
             </div>
         </div>
     </body>

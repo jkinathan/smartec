@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -17,6 +20,7 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
+<<<<<<< HEAD
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 // const files = require.context('./', true, /\.vue$/i)
@@ -24,6 +28,12 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 // files.keys().map(key => {
 //     return Vue.component(_.last(key.split('/')).split('.')[0], files(key))
 // })
+=======
+// const files = require.context('./', true, /\.vue$/i);
+// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+
+Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -32,5 +42,9 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
  */
 
 const app = new Vue({
+<<<<<<< HEAD
     el: '#app'
+=======
+    el: '#app',
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
 });

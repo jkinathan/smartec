@@ -28,7 +28,11 @@ class RegisterController extends Controller
      *
      * @var string
      */
+<<<<<<< HEAD
     protected $redirectTo = '/home';
+=======
+    protected $redirectTo = '/customer/customers';
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
 
     /**
      * Create a new controller instance.
@@ -37,7 +41,11 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
+<<<<<<< HEAD
         $this->middleware('guest');
+=======
+        $this->middleware('auth');
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
     }
 
     /**
@@ -51,7 +59,11 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+<<<<<<< HEAD
             'password' => ['required', 'string', 'min:6', 'confirmed'],
+=======
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
         ]);
     }
 
@@ -63,10 +75,18 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+<<<<<<< HEAD
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+=======
+        //$status = "User Created successfully!!";
+        return User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => $data['password'],
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
         ]);
     }
 }

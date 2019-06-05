@@ -37,6 +37,10 @@ return [
         'stack' => [
             'driver' => 'stack',
             'channels' => ['daily'],
+<<<<<<< HEAD
+=======
+            'ignore_exceptions' => false,
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
         ],
 
         'single' => [
@@ -61,7 +65,11 @@ return [
         ],
 
         'papertrail' => [
+<<<<<<< HEAD
             'driver'  => 'monolog',
+=======
+            'driver' => 'monolog',
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
             'level' => 'debug',
             'handler' => SyslogUdpHandler::class,
             'handler_with' => [
@@ -73,6 +81,10 @@ return [
         'stderr' => [
             'driver' => 'monolog',
             'handler' => StreamHandler::class,
+<<<<<<< HEAD
+=======
+            'formatter' => env('LOG_STDERR_FORMATTER'),
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
             'with' => [
                 'stream' => 'php://stderr',
             ],

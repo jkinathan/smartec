@@ -46,15 +46,27 @@ return [
             'host' => 'localhost',
             'queue' => 'default',
             'retry_after' => 90,
+<<<<<<< HEAD
+=======
+            'block_for' => 0,
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
         ],
 
         'sqs' => [
             'driver' => 'sqs',
+<<<<<<< HEAD
             'key' => env('SQS_KEY', 'your-public-key'),
             'secret' => env('SQS_SECRET', 'your-secret-key'),
             'prefix' => env('SQS_PREFIX', 'https://sqs.us-east-1.amazonaws.com/your-account-id'),
             'queue' => env('SQS_QUEUE', 'your-queue-name'),
             'region' => env('SQS_REGION', 'us-east-1'),
+=======
+            'key' => env('AWS_ACCESS_KEY_ID'),
+            'secret' => env('AWS_SECRET_ACCESS_KEY'),
+            'prefix' => env('SQS_PREFIX', 'https://sqs.us-east-1.amazonaws.com/your-account-id'),
+            'queue' => env('SQS_QUEUE', 'your-queue-name'),
+            'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
+>>>>>>> 75ec82ba21b09773cc59059b6781dbfe73785aef
         ],
 
         'redis' => [
